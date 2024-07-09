@@ -18,8 +18,8 @@ jobs:
       uses: 'google-github-actions/auth@v1'
       with:
         token_format: 'access_token'
-        workload_identity_provider: 'PUT-YOUR-PROVIDER'
-        service_account: 'YOUR-SERVICE-ACCOUNT'
+        workload_identity_provider: 'projects/144510483827/locations/global/workloadIdentityPools/github/providers/my-repo'
+      #  service_account: 'YOUR-SERVICE-ACCOUNT'
 
     # Install gcloud, `setup-gcloud` automatically picks up authentication from `auth`.
     - name: 'Set up Cloud SDK'
@@ -29,4 +29,4 @@ jobs:
     - id: 'gcloud'
       name: 'gcloud'
       run: |-
-        gcloud secrets versions access "latest" --secret "my-secret"
+        gcloud secrets versions access "latest" --secret "secret"
