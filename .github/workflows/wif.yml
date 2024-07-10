@@ -29,5 +29,5 @@ jobs:
     - id: 'gcloud'
       name: 'gcloud'
       run: |-
-       # gcloud secrets versions access "latest" --secret "secret"
+       #gcloud secrets versions access "latest" --secret "secret"
         gsutil ls gs://test-bucket-gke-workload-identity
