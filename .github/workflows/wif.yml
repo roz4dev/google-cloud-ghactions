@@ -29,4 +29,5 @@ jobs:
     - id: 'gcloud'
       name: 'gcloud'
       run: |-
+        gcloud config set project fortinm-dev
         gcloud secrets versions access "latest" --secret "secret"
