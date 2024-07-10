@@ -10,12 +10,12 @@ jobs:
       id-token: 'write'
 
     steps:
-    - uses: 'actions/checkout@v3'
+    - uses: 'actions/checkout@v4'
 
     # Configure Workload Identity Federation via a credentials file.
     - id: 'auth'
       name: 'Authenticate to Google Cloud'
-      uses: 'google-github-actions/auth@v1'
+      uses: 'google-github-actions/auth@v2'
       with:
       #  token_format: 'access_token'
         workload_identity_provider: 'projects/144510483827/locations/global/workloadIdentityPools/github-identity-pool/providers/github'
