@@ -29,5 +29,5 @@ jobs:
     - id: 'gcloud'
       name: 'gcloud'
       run: |-
-  
-        gsutil ls gs://test-bucket-gke-workload-identity
+         gcloud storage ls --project fortinm-dev
+      #  gsutil ls gs://test-bucket-gke-workload-identity
