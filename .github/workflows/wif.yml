@@ -19,7 +19,7 @@ jobs:
       with:
       #  token_format: 'access_token'
         workload_identity_provider: 'projects/144510483827/locations/global/workloadIdentityPools/github/providers/my-repo'
-      #  service_account: 'YOUR-SERVICE-ACCOUNT'
+        service_account: 'github-actions-wif@fortinm-dev.iam.gserviceaccount.com'
 
     # Install gcloud, `setup-gcloud` automatically picks up authentication from `auth`.
     - name: 'Set up Cloud SDK'
