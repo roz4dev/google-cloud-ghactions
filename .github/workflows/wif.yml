@@ -32,5 +32,4 @@ jobs:
     - id: 'gcloud'
       name: 'gcloud'
       run: |-
-         gcloud storage ls --project project-0092-prod
-      #  gsutil ls gs://testbucket-99
+         gsutil ls gs://testbucket-99
