@@ -1,4 +1,4 @@
-name: Get secrets from secret manager
+name: Get storages buckets
 on: 
   workflow_dispatch
 jobs:
