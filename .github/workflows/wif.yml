@@ -24,7 +24,7 @@ jobs:
       #  workload_identity_provider: 'projects/776048919216/locations/global/workloadIdentityPools/github/providers/my-repo'
       #  service_account: 'my-service-account@project-0092-prod.iam.gserviceaccount.com'
 
-        workload_identity_provider: 'projects/776048919216/locations/global/workloadIdentityPools/svc-aws/providers/my-repo'
+        workload_identity_provider: 'projects/776048919216/locations/global/workloadIdentityPools/github/providers/my-repo'
         service_account: 'svc-aws-service-account@project-0092-prod.iam.gserviceaccount.com'
 
     # Install gcloud, `setup-gcloud` automatically picks up authentication from `auth`.
