@@ -4,7 +4,7 @@ on:
 jobs:
   get-secret:
     runs-on: ubuntu-latest
-    environment: dev
+    environment: qa
     # Add "id-token" with the intended permissions.
 
     permissions:
