@@ -4,7 +4,9 @@ on:
 jobs:
   get-secret:
     runs-on: ubuntu-latest
+    environment: dev
     # Add "id-token" with the intended permissions.
+
     permissions:
       contents: 'read'
       id-token: 'write'
